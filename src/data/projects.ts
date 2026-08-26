@@ -16,6 +16,7 @@ export interface Project {
 
   featured?: boolean;
   github?: string;
+  paper?: string;
   video?: string;
   images?: string[];
   status?: string;
@@ -70,11 +71,53 @@ export const projects: Project[] = [
 
 
   {
+    id: "flyrank-ml-capstone",
+
+    number: "02",
+
+    title:
+      "FlyRank ML Capstone — Content Performance Decline Prioritization",
+
+    shortTitle:
+      "FlyRank ML Capstone",
+
+    category:
+      "Machine Learning",
+
+    description:
+      "An end-to-end machine-learning system built on real pseudonymized FlyRank search data to help content teams prioritize which pages should be reviewed first. Logistic Regression improved Precision@50 from 0.48 to 0.66, a 37.5% relative improvement, with the main result evaluated using a client-grouped holdout with zero client overlap.",
+
+    technologies: [
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "Logistic Regression",
+      "Random Forest",
+      "Gradient Boosting",
+    ],
+    images: [
+  "/projects/flyrank-ml/model-comparison.PNG",
+  "/projects/flyrank-ml/validation-comparison.PNG",
+  "/projects/flyrank-ml/workflow.PNG",
+],
+
+    github:
+      "https://github.com/Malang43/flyrank-ml-internship-Malang43",
+
+    paper:
+      "https://malang43.github.io/flyrank-ml-internship-Malang43/",
+
+    status:
+      "Completed",
+  },
+
+
+  {
     id:
       "phonetic-search",
 
     number:
-      "02",
+      "03",
 
     title:
       "AI Phonetic Search & Speech Recognition System",
@@ -97,11 +140,11 @@ export const projects: Project[] = [
       "Fuzzy Matching",
     ],
 
-   images: [
-  "/projects/phonetic-search/phonetic-search-interface.PNG",
-  "/projects/phonetic-search/speech-search-result.PNG",
-  "/projects/phonetic-search/whisper-processing.png",
-],
+    images: [
+      "/projects/phonetic-search/phonetic-search-interface.PNG",
+      "/projects/phonetic-search/speech-search-result.PNG",
+      "/projects/phonetic-search/whisper-processing.png",
+    ],
 
     status:
       "Completed",
@@ -113,7 +156,7 @@ export const projects: Project[] = [
       "recommendation-system",
 
     number:
-      "03",
+      "04",
 
     title:
       "Machine Learning Recommendation System",
@@ -139,7 +182,6 @@ export const projects: Project[] = [
       "/projects/recommendation/model-performance.png",
       "/projects/recommendation/evaluation-graph.png",
       "/projects/recommendation/recommendation-results.png",
-      
     ],
 
     status:
@@ -152,7 +194,7 @@ export const projects: Project[] = [
       "ugv-mobile-robot",
 
     number:
-      "04",
+      "05",
 
     title:
       "UGV Mobile Robot & Custom Control Dashboard",
@@ -176,9 +218,11 @@ export const projects: Project[] = [
       "Python",
       "Motor Control",
     ],
-images: [
-  "/projects/ugv/ugv-robot.jpeg",
-],
+
+    images: [
+      "/projects/ugv/ugv-robot.jpeg",
+    ],
+
     status:
       "In Development",
   },
@@ -189,7 +233,7 @@ images: [
       "edge-ai-health",
 
     number:
-      "05",
+      "06",
 
     title:
       "Edge AI Pulse-Oximeter Classification",
@@ -222,7 +266,7 @@ images: [
       "apollo-n8n-ghl",
 
     number:
-      "06",
+      "07",
 
     title:
       "Apollo → n8n → GoHighLevel Automation",
@@ -255,7 +299,7 @@ images: [
       "bilingual-agent",
 
     number:
-      "07",
+      "08",
 
     title:
       "French & English Bilingual AI Agent",
@@ -288,7 +332,7 @@ images: [
       "hospitality-agent",
 
     number:
-      "08",
+      "09",
 
     title:
       "Hotel & Restaurant AI Automation Agent",

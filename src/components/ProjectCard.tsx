@@ -2,6 +2,7 @@ import {
   Bot,
   BrainCircuit,
   Cpu,
+  FileText,
   Workflow,
 } from "lucide-react";
 
@@ -157,30 +158,55 @@ export default function ProjectCard({
 
 
         {/* FOOTER */}
-        <div className="mt-7 flex items-center justify-between border-t border-[#2A2521] pt-5">
+        <div className="mt-7 flex flex-wrap items-center justify-between gap-4 border-t border-[#2A2521] pt-5">
 
           <span className="text-xs font-semibold text-[#AAA198]">
             {project.status}
           </span>
 
 
-          {project.github && (
+          <div className="flex flex-wrap items-center gap-4">
 
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={`${project.title} GitHub`}
-              className="flex items-center gap-2 text-xs font-bold text-[#D8D0C7] transition hover:text-[#FF8A32]"
-            >
+            {/* GITHUB */}
+            {project.github && (
 
-              <FaGithub size={17} />
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`${project.title} GitHub`}
+                className="flex items-center gap-2 text-xs font-bold text-[#D8D0C7] transition hover:text-[#FF8A32]"
+              >
 
-              GitHub
+                <FaGithub size={17} />
 
-            </a>
+                GitHub
 
-          )}
+              </a>
+
+            )}
+
+
+            {/* RESEARCH PAPER */}
+            {project.paper && (
+
+              <a
+                href={project.paper}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`${project.title} Research Paper`}
+                className="flex items-center gap-2 text-xs font-bold text-[#D8D0C7] transition hover:text-[#FF8A32]"
+              >
+
+                <FileText size={16} />
+
+                Research
+
+              </a>
+
+            )}
+
+          </div>
 
         </div>
 

@@ -1,8 +1,12 @@
 export const socialLinks = {
-  github: "https://github.com/Malang43",
+  github:
+    "https://github.com/Malang43",
 
   linkedin:
     "https://www.linkedin.com/in/muhammad-farhat-mehdi-090813341/",
+
+  cv:
+    "/Muhammad_Farhat_Mehdi_CV.pdf",
 
   fiverr:
     "https://www.fiverr.com/s/rEVvbVy",
