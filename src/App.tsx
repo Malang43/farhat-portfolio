@@ -46,12 +46,12 @@ function App() {
       {/* ABOUT */}
       <section
         id="about"
-        className="scroll-mt-20 border-t border-[#241F1B] bg-[#0D0C0B] px-6 py-28"
+        className="scroll-mt-20 border-t border-[#241F1B] bg-[#0D0C0B] px-5 py-20 sm:px-6 md:py-28"
       >
 
         <div className="mx-auto max-w-7xl">
 
-          <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+          <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-12">
 
 
             {/* LEFT */}
@@ -62,7 +62,7 @@ function App() {
               </p>
 
 
-              <h2 className="mt-5 text-4xl font-black leading-tight text-[#F7F3ED] md:text-5xl">
+              <h2 className="mt-5 text-3xl font-black leading-tight text-[#F7F3ED] sm:text-4xl md:text-5xl">
 
                 Computer Engineering
 
@@ -78,40 +78,27 @@ function App() {
             {/* RIGHT */}
             <div>
 
-              <p className="text-lg leading-8 text-[#D8D0C7]">
+              <p className="text-base leading-8 text-[#D8D0C7] sm:text-lg">
 
-                I'm a Computer Engineering student interested
-                in building systems where software intelligence
-                interacts with real-world devices, machines and
-                business processes.
-
-              </p>
-
-
-              <p className="mt-6 text-base leading-8 text-[#BEB5AC]">
-
-                My projects range from machine-learning and
-                speech-based applications to autonomous robots,
-                embedded intelligence and AI-driven automation.
-                I enjoy taking an idea beyond an isolated model
-                or script and developing it into a complete,
-                usable system.
+                I'm a Computer Engineering student focused
+                on building intelligent systems that connect
+                software, AI, automation, robotics and
+                hardware.
 
               </p>
 
 
-              <p className="mt-6 text-base leading-8 text-[#BEB5AC]">
+              <p className="mt-5 text-base leading-8 text-[#BEB5AC]">
 
-                My approach combines software development,
-                artificial intelligence, robotics, automation
-                and hardware integration while keeping the
-                focus on practical problem solving and
-                end-to-end implementation.
+                I enjoy taking projects beyond isolated
+                models or scripts and turning them into
+                complete end-to-end systems that solve
+                practical problems.
 
               </p>
 
 
-              <div className="mt-9 grid gap-3 sm:grid-cols-3">
+              <div className="mt-8 grid gap-3 sm:grid-cols-3">
 
                 <div className="rounded-xl border border-[#2A2521] bg-[#12100E] p-5 transition hover:border-[#E87524]/50">
 
@@ -162,12 +149,12 @@ function App() {
       </section>
 
 
-      {/* CONTACT FORM */}
+      {/* WORKING CONTACT FORM */}
       <Contact />
 
 
       {/* FOOTER */}
-      <footer className="border-t border-[#241F1B] bg-[#080706] px-6 py-8">
+      <footer className="border-t border-[#241F1B] bg-[#080706] px-5 py-8 sm:px-6">
 
         <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-[#8F857C] sm:flex-row sm:items-center sm:justify-between">
 

@@ -182,20 +182,15 @@ export default function Hero() {
               </motion.a>
 
               {/* DOWNLOAD CV */}
-              <motion.a
-                href="/cv/Muhammad_Farhat_Mehdi_CV.pdf"
-                download="Muhammad_Farhat_Mehdi_CV.pdf"
-                whileHover={{
-                  y: -4,
-                  scale: 1.02,
-                }}
-                whileTap={{
-                  scale: 0.97,
-                }}
-                className="flex items-center gap-2 rounded-xl border border-[#332A24] bg-[#151210] px-6 py-3.5 font-semibold text-[#E7E0D8] transition-colors hover:border-[#E87524]/60 hover:text-[#FF8A32]"
-              >
-                Download CV
-              </motion.a>
+              <a
+  href="/Muhammad_Farhat_Mehdi_CV.pdf"
+  target="_blank"
+  rel="noreferrer"
+  className="rounded-xl border border-[#332A24] bg-[#151210] px-6 py-3.5 font-semibold text-[#E7E0D8] transition-colors hover:border-[#E87524]/60 hover:text-[#FF8A32]"
+>
+  View CV
+</a>
+              
 
               {/* GITHUB */}
               <motion.a
