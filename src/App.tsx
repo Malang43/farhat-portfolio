@@ -1,13 +1,5 @@
-import {
-  ArrowUpRight,
-} from "lucide-react";
-
-import {
-  FaGithub,
-  FaLinkedin,
-  FaWhatsapp,
-} from "react-icons/fa";
-
+import Contact
+  from "./sections/Contact";
 
 import Navbar
   from "./components/Navbar";
@@ -23,10 +15,6 @@ import Projects
 
 import Skills
   from "./sections/Skills";
-
-import {
-  socialLinks,
-} from "./data/socialLinks";
 
 
 function App() {
@@ -174,134 +162,8 @@ function App() {
       </section>
 
 
-      {/* CONTACT */}
-      <section
-        id="contact"
-        className="scroll-mt-20 border-t border-[#241F1B] bg-[#0B0A09] px-6 py-28"
-      >
-
-        <div className="mx-auto max-w-7xl">
-
-          <div className="relative overflow-hidden rounded-3xl border border-[#332A24] bg-[#12100E] p-8 md:p-14 lg:p-16">
-
-
-            {/* BACKGROUND GLOW */}
-            <div className="pointer-events-none absolute -right-32 -top-32 h-[400px] w-[400px] rounded-full bg-[#A94712]/10 blur-[130px]" />
-
-
-            <div className="relative">
-
-              <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#FF8A32]">
-                Let's Connect
-              </p>
-
-
-              <h2 className="mt-5 max-w-4xl text-4xl font-black leading-tight text-[#F7F3ED] md:text-5xl">
-
-                Have an AI, automation,
-                machine-learning or robotics project?
-
-              </h2>
-
-
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-[#BEB5AC]">
-
-                Connect with me through WhatsApp,
-                LinkedIn, GitHub, Upwork or Fiverr.
-
-              </p>
-
-
-              {/* WHATSAPP */}
-              <a
-                href={socialLinks.whatsapp}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-9 inline-flex items-center gap-3 rounded-xl bg-[#E87524] px-7 py-3.5 font-bold text-white transition hover:-translate-y-1 hover:bg-[#FF8A32]"
-              >
-
-                <FaWhatsapp size={21} />
-
-                WhatsApp
-
-                <span className="font-medium text-white/80">
-                  {socialLinks.whatsappNumber}
-                </span>
-
-              </a>
-
-
-              {/* PROFESSIONAL LINKS */}
-              <div className="mt-6 flex flex-wrap gap-3">
-
-                <a
-                  href={socialLinks.linkedin}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group flex items-center gap-2 rounded-xl border border-[#332A24] bg-[#151210] px-5 py-3 font-semibold text-[#D8D0C7] transition hover:-translate-y-1 hover:border-[#E87524]/60 hover:text-[#FF8A32]"
-                >
-
-                  <FaLinkedin size={18} />
-
-                  LinkedIn
-
-                  <ArrowUpRight size={15} />
-
-                </a>
-
-
-                <a
-                  href={socialLinks.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group flex items-center gap-2 rounded-xl border border-[#332A24] bg-[#151210] px-5 py-3 font-semibold text-[#D8D0C7] transition hover:-translate-y-1 hover:border-[#E87524]/60 hover:text-[#FF8A32]"
-                >
-
-                  <FaGithub size={18} />
-
-                  GitHub
-
-                  <ArrowUpRight size={15} />
-
-                </a>
-
-
-                <a
-                  href={socialLinks.upwork}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group flex items-center gap-2 rounded-xl border border-[#332A24] bg-[#151210] px-5 py-3 font-semibold text-[#D8D0C7] transition hover:-translate-y-1 hover:border-[#E87524]/60 hover:text-[#FF8A32]"
-                >
-
-                  Upwork
-
-                  <ArrowUpRight size={15} />
-
-                </a>
-
-
-                <a
-                  href={socialLinks.fiverr}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group flex items-center gap-2 rounded-xl border border-[#332A24] bg-[#151210] px-5 py-3 font-semibold text-[#D8D0C7] transition hover:-translate-y-1 hover:border-[#E87524]/60 hover:text-[#FF8A32]"
-                >
-
-                  Fiverr
-
-                  <ArrowUpRight size={15} />
-
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
+      {/* CONTACT FORM */}
+      <Contact />
 
 
       {/* FOOTER */}
