@@ -1,32 +1,49 @@
-# React + TypeScript + Vite
+# Muhammad Farhat Mehdi — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Personal engineering portfolio covering Agentic AI, Machine Learning,
+Robotics, Automation, Edge AI, and Intelligent Systems.
 
-Currently, two official plugins are available:
+## Live portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://farhat-portfolio-eight.vercel.app/
 
-## React Compiler
+## What is included
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Hero positioning for Computer Engineering and Intelligent Systems
+- Flagship RoboOps AI case study
+- Featured projects including WatchMyWork, DoThis, and FlyRank ML
+- Filterable project grid with evidence, repositories, demos, video, and research links
+- Technical skills grouped by engineering domain
+- Experience, achievements, education, About, and Formspree contact sections
+- SEO metadata, structured data, robots.txt, sitemap.xml, and Vercel Analytics
 
-## Expanding the Oxlint configuration
+## Key technologies
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+React, TypeScript, Vite, Tailwind CSS, Motion, FastAPI, Python, Playwright,
+ROS2, Nav2, Gazebo, OpenCV, PostgreSQL, SQLite, n8n, and Edge Impulse.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Project structure
+
+```text
+src/
+├── components/       # Navbar, project cards, and animation helpers
+├── data/             # Project and social-link data
+├── sections/         # Hero, projects, skills, RoboOps, and contact sections
+├── App.tsx           # Page composition and experience/about content
+└── main.tsx          # React entry point and Vercel Analytics
+public/
+├── projects/         # Project screenshots and RoboOps demo video
+├── profile/          # Profile image
+└── Muhammad_Farhat_Mehdi_CV.pdf
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Installation
+
+Requirements: Node.js and npm.
+
+```bash
+npm install
+npm run dev
+npm run build
+npm run lint
+```

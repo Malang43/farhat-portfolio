@@ -2,6 +2,7 @@ import {
   Bot,
   BrainCircuit,
   Cpu,
+  ExternalLink,
   FileText,
   Workflow,
 } from "lucide-react";
@@ -16,16 +17,11 @@ import type {
 
 
 const categoryIcons = {
+  "Agentic AI": BrainCircuit,
   Robotics: Bot,
-
-  "Machine Learning":
-    BrainCircuit,
-
-  Automation:
-    Workflow,
-
-  Embedded:
-    Cpu,
+  "Machine Learning": BrainCircuit,
+  Automation: Workflow,
+  "Edge AI": Cpu,
 };
 
 
@@ -136,6 +132,17 @@ export default function ProjectCard({
         )}
 
 
+        {project.evidence && (
+          <div className="mt-5 rounded-xl border border-[#E87524]/20 bg-[#E87524]/[0.06] p-4">
+            <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#FF8A32]">
+              Key proof
+            </p>
+            <p className="mt-2 text-sm font-semibold leading-6 text-[#E7E0D8]">
+              {project.evidence}
+            </p>
+          </div>
+        )}
+
         {/* TECHNOLOGIES */}
         <div className="mt-6 flex flex-wrap gap-2">
 
@@ -186,6 +193,31 @@ export default function ProjectCard({
 
             )}
 
+            {project.live && (
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`${project.title} live demo`}
+                className="flex items-center gap-2 text-xs font-bold text-[#FF954D] transition hover:text-[#FFB16F]"
+              >
+                <ExternalLink size={16} />
+                Live Demo
+              </a>
+            )}
+
+            {project.video && (
+              <a
+                href={project.video}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`${project.title} video`}
+                className="flex items-center gap-2 text-xs font-bold text-[#D8D0C7] transition hover:text-[#FF8A32]"
+              >
+                <ExternalLink size={16} />
+                Video
+              </a>
+            )}
 
             {/* RESEARCH PAPER */}
             {project.paper && (

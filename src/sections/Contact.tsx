@@ -1,4 +1,5 @@
 import { useForm, ValidationError } from "@formspree/react";
+import { socialLinks } from "../data/socialLinks";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xjybnnyj");
@@ -22,6 +23,27 @@ export default function Contact() {
           Have an AI, machine-learning, automation, robotics, or engineering opportunity?
           Send me a message.
         </p>
+
+        <div className="mt-7 flex flex-wrap gap-3">
+          {[
+            ["Email", "#contact"],
+            ["LinkedIn", socialLinks.linkedin],
+            ["GitHub", socialLinks.github],
+            ["WhatsApp", socialLinks.whatsapp],
+            ["Upwork", socialLinks.upwork],
+            ["Fiverr", socialLinks.fiverr],
+          ].map(([label, href]) => (
+            <a
+              key={label}
+              href={href}
+              target={href.startsWith("mailto:") ? undefined : "_blank"}
+              rel={href.startsWith("mailto:") ? undefined : "noreferrer"}
+              className="rounded-lg border border-[#332A24] bg-[#151210] px-3.5 py-2 text-sm font-semibold text-[#D8D0C7] transition hover:border-[#E87524]/60 hover:text-[#FF8A32]"
+            >
+              {label}
+            </a>
+          ))}
+        </div>
 
         {state.succeeded ? (
           <div className="mt-10 rounded-xl border border-[#E87524]/40 bg-[#151210] p-6">

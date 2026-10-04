@@ -18,10 +18,11 @@ type Filter =
 
 const filters: Filter[] = [
   "All",
+  "Agentic AI",
   "Automation",
   "Machine Learning",
   "Robotics",
-  "Embedded",
+  "Edge AI",
 ];
 
 
@@ -117,21 +118,37 @@ export default function Projects() {
         </div>
 
 
-        {/* CARDS */}
-        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        {activeFilter === "All" ? (
+          <>
+            <div className="mt-14">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#AAA198]">
+                Flagship & selected systems
+              </p>
+              <div className="mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                {filteredProjects.filter((project) => project.featured).map((project) => (
+                  <ProjectCard key={project.id} project={project} />
+                ))}
+              </div>
+            </div>
 
-          {filteredProjects.map(
-            (project) => (
-
-              <ProjectCard
-                key={project.id}
-                project={project}
-              />
-
-            ),
-          )}
-
-        </div>
+            <div className="mt-16">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#AAA198]">
+                More engineering work
+              </p>
+              <div className="mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                {filteredProjects.filter((project) => !project.featured).map((project) => (
+                  <ProjectCard key={project.id} project={project} />
+                ))}
+              </div>
+            </div>
+          </>
+        ) : (
+          <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {filteredProjects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
+        )}
 
       </div>
 
