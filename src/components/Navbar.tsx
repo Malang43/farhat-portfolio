@@ -30,6 +30,11 @@ const links = [
   },
 
   {
+    label: "Experience",
+    href: "#experience",
+  },
+
+  {
     label: "About",
     href: "#about",
   },
@@ -52,7 +57,7 @@ export default function Navbar() {
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-[#332A24] bg-[#0B0A09]/95 backdrop-blur-xl">
 
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-6">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5 sm:px-6">
 
 
         {/* LOGO */}
@@ -75,7 +80,7 @@ export default function Navbar() {
 
 
         {/* DESKTOP NAVIGATION */}
-        <div className="hidden items-center gap-7 lg:flex">
+        <div className="hidden items-center gap-6 lg:flex">
 
           {links.map(
             (link) => (
@@ -94,6 +99,15 @@ export default function Navbar() {
 
             ),
           )}
+
+          <a
+            href={socialLinks.cv}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-lg border border-[#E87524]/40 px-3.5 py-2 text-sm font-bold text-[#FF954D] transition hover:border-[#FF8A32] hover:bg-[#E87524]/10"
+          >
+            CV
+          </a>
 
         </div>
 
@@ -200,6 +214,16 @@ export default function Navbar() {
 
               ),
             )}
+
+            <a
+              href={socialLinks.cv}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setOpen(false)}
+              className="mt-3 flex min-h-11 items-center font-bold text-[#FF954D]"
+            >
+              View CV
+            </a>
 
 
             <a

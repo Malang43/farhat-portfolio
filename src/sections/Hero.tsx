@@ -102,22 +102,19 @@ export default function Hero() {
           {/* MAIN HEADING */}
           <FadeIn delay={0.3} y={30}>
             <h2 className="mt-8 max-w-3xl text-2xl font-semibold leading-[1.4] text-[#E7E0D8] md:text-3xl">
-              Building intelligent systems across
-
-              <span className="text-[#FF8A32]">
-                {" "}
-                AI, automation, robotics and embedded technology.
-              </span>
+              I build end-to-end intelligent systems that move from
+              {" "}
+              <span className="text-[#FF8A32]">reasoning to action</span>
+              {" "}across AI, automation, robotics, and edge devices.
             </h2>
           </FadeIn>
 
           {/* DESCRIPTION */}
           <FadeIn delay={0.4} y={25}>
             <p className="mt-6 max-w-3xl text-base leading-8 text-[#BEB5AC] md:text-lg">
-              I combine software intelligence with real-world
-              systems — developing machine-learning applications,
-              AI automation, autonomous robotics and embedded
-              intelligent solutions.
+              Computer Engineering student and Intelligent Systems Developer
+              focused on practical AI, agentic workflows, autonomous robotics,
+              and embedded intelligence.
             </p>
           </FadeIn>
 
@@ -173,7 +170,7 @@ export default function Hero() {
                 }}
                 className="group flex items-center gap-2 rounded-xl bg-[#E87524] px-6 py-3.5 font-bold text-white transition-colors hover:bg-[#FF8A32]"
               >
-                Explore My Work
+                View Projects
 
                 <ArrowRight
                   size={18}
